@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLPrincipal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMail" />
+
+    <EditText
+        android:id="@+id/editTextMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textWebEmailAddress" />
+
+    <TextView
+        android:id="@+id/textViewCUIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblCUIT" />
+
+    <EditText
+        android:id="@+id/editTextCUIT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textViewMoneda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMonedaDeLaInversion" />
+
+    <RadioGroup
+        android:id="@+id/RGMoneda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonDolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/RBtnDolares" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/RBtnPesos" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMonto" />
+
+    <EditText
+        android:id="@+id/editTextMonto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number|numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewDiasInversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDiasDeLaInversion" />
+
+    <SeekBar
+        android:id="@+id/seekBarDiasInversion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max='180' />
+
+    <TextView
+        android:id="@+id/textViewDiasSeleccionados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Dias seleccionados:" />
+
+    <TextView
+        android:id="@+id/textViewIntereses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblItereses" />
+
+    <LinearLayout
+        android:id="@+id/linearLAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Switch
+            android:id="@+id/switchAvisoVencimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLines="6"
+            android:text="@string/lblRecibirAvisoDeVencimiento"
+            tools:checked="false" />
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/toggleButtonAcreditarCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BtonAcreditarEnCuenta"
+        android:textOff="@string/lblAccionAlVencimientoAcreditar"
+        android:textOn="@string/lblAccionAlVencimientoRenovar" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTerminosYCondiciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lblAceptarTerminosYCondiciones" />
+
+    <Button
+        android:id="@+id/buttonHacerPlazoFijo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/BtonHacerPlazoFijo" />
+
+    <TextView
+        android:id="@+id/textViewDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/lblDetalle"
+        tools:text="Plazo fijo" />
+
+</LinearLayout>

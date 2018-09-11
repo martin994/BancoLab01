@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BancoLab01</string>
+    <string name="lblMail">Correo Electronico</string>
+    <string name="lblCUIT">CUIT</string>
+    <string name="lblMonedaDeLaInversion">Moneda de la inversion</string>
+    <string name="lblMonto">Monto a invertir</string>
+    <string name="lblDiasDeLaInversion">Cantidad de dias de la inversion</string>
+    <string name="lblRecibirAvisoDeVencimiento">Desea recibir aviso de vencimiento</string>
+    <string name="lblAccionAlVencimientoRenovar">Accion al vencimiento renovar</string>
+    <string name="lblAccionAlVencimientoAcreditar">Accion al vencimiento acreditar</string>
+    <string name="lblAceptarTerminosYCondiciones">Aceptar Terminos Y Condiciones</string>
+    <string name="lblItereses">Intereses: </string>
+    <string name="lblDetalle">Plazo fijo</string>
+    <string name="BtonAcreditarEnCuenta">Acreditar en cuenta</string>
+    <string name="BtonHacerPlazoFijo">Hacer plazo fijo</string>
+    <string name="RBtnDolares">US$</string>
+    <string name="RBtnPesos">AR$</string>
+</resources>
